@@ -10,6 +10,7 @@ function Home() {
   const [decks, setDecks] = useState([]);
 
   // Loading all of the decks from the API
+
   useEffect(() => {
     async function loadDecks() {
       const response = listDecks();

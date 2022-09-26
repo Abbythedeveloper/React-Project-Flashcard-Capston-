@@ -35,21 +35,9 @@ export default DeckScreenDeleteDeckButton;
 //   fetch("https://jsonplaceholder.typicode.com/users/1")
 //     .then((response) => response.json())
 //     .then(setUser);
-// }, []); 
-//보통 이모양 
+// }, []);
+//보통 이모양
 // you get changed data when you click.
 //
-
-
-
-
-
-
-
-
-
-
-
-
 
 // just quick note. I just want to understand how the other code routers, useEffect(API) useState works rather than trying to spend too much time on the UI. for UI, let's just look at it.

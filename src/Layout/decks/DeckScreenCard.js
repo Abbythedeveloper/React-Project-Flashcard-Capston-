@@ -12,10 +12,11 @@ function DeckScreenCard({ cards, deckId, url }) {
       window.confirm("Delete this card? You will not be able to recover it.")
     ) {
       deleteCard(card.id);
-    } 
+    }
   };
 
   // Creates a Bootstrap card for each card in the deck with an edit and delete button
+
   const cardDisplay = cards.map((card, index) => {
     return (
       <div className="deck-card card mt-2" key={index}>
@@ -29,9 +30,7 @@ function DeckScreenCard({ cards, deckId, url }) {
             <p className="card-text">{card.back}</p>
           </div>
         </div>
-
         <hr />
-        
         <div className="ml-auto mt-2">
           <button
             type="button"
@@ -42,7 +41,6 @@ function DeckScreenCard({ cards, deckId, url }) {
           >
             <span className="oi oi-pencil" /> Edit
           </button>
-
           <button
             type="button"
             className="btn btn-danger"

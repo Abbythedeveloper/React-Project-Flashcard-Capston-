@@ -23,9 +23,14 @@ function Study() {
 
   return (
     <div>
-      <StudyScreenBreadcrumbNavBar deckId={deckId} deck={deck}/>
+      <StudyScreenBreadcrumbNavBar deckId={deckId} deck={deck} />
       <h2 className="mb-4">Study: {deck.name}</h2>
-      <StudyCard cards={cards} currentCard={currentCard} setCurrentCard={setCurrentCard} deckId={deckId}/>
+      <StudyCard
+        cards={cards}
+        currentCard={currentCard}
+        setCurrentCard={setCurrentCard}
+        deckId={deckId}
+      />
     </div>
   );
 }

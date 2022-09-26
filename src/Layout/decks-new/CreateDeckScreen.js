@@ -8,30 +8,24 @@ import { Link } from "react-router-dom";
 import CreateDeckCancelButton from "./CreateDeckCancelButton";
 
 function CreateDeckScreen() {
-  const [deckName, setDeckName] = useState("");
-  const [deckDescription, setDeckDescription] = useState("");
-
+  const [name, setName] = useState("");
   const history = useHistory();
 
   // Handling changes to the deck's name and description in the form
 
-  const handleDeckNameChange = (event) => setDeckName(event.target.value);
-
-  const handleDeckDescriptionChange = (event) =>
-    setDeckDescription(event.target.value);
+  const handleNamechange = (event) => setName(event.target.value);
 
   // Adding new deck to the database. Saved deck will have an "id" property
-  // Clicking submit will then take the user to that deck's screen
 
+  // Clicking submit will then take the user to that deck's screen
 
   const handleCreateDeckSubmit = (event) => {
     event.preventDefault();
     createDeck({
-      name: deckName,
-      description: deckDescription,
+      name: name,
+      description: name,
     }).then((newDeck) => history.push(`/decks/${newDeck.id}`));
   };
-
 
   //adding breadscrumb bar
   return (
@@ -59,8 +53,8 @@ function CreateDeckScreen() {
             name="deckName"
             className="form-control"
             placeholder="Deck Name"
-            onChange={handleDeckNameChange}
-            value={deckName}
+            onChange={handleNamechange}
+            value={name}
           />
         </div>
         <div className="form-group">
@@ -71,8 +65,8 @@ function CreateDeckScreen() {
             className="form-control"
             placeholder="Brief description of the deck"
             rows="5"
-            onChange={handleDeckDescriptionChange}
-            value={deckDescription}
+            onChange={handleNamechange}
+            value={name}
           />
         </div>
         <CreateDeckCancelButton />
