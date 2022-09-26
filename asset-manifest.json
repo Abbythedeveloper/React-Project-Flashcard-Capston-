@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/React-Project-Flashcard-Capston-/static/js/main.72ff331f.chunk.js",
+    "main.js.map": "/React-Project-Flashcard-Capston-/static/js/main.72ff331f.chunk.js.map",
+    "runtime-main.js": "/React-Project-Flashcard-Capston-/static/js/runtime-main.99015041.js",
+    "runtime-main.js.map": "/React-Project-Flashcard-Capston-/static/js/runtime-main.99015041.js.map",
+    "static/js/2.91d087be.chunk.js": "/React-Project-Flashcard-Capston-/static/js/2.91d087be.chunk.js",
+    "static/js/2.91d087be.chunk.js.map": "/React-Project-Flashcard-Capston-/static/js/2.91d087be.chunk.js.map",
+    "index.html": "/React-Project-Flashcard-Capston-/index.html",
+    "static/js/2.91d087be.chunk.js.LICENSE.txt": "/React-Project-Flashcard-Capston-/static/js/2.91d087be.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99015041.js",
+    "static/js/2.91d087be.chunk.js",
+    "static/js/main.72ff331f.chunk.js"
+  ]
+}
